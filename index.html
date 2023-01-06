@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Github</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" type="image/png" href="./images/icon.png" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="box result_box">
+                <div class="info-section">
+                    <div class="info-box">
+                        <img id="profile_image" src="./images/profile.png">
+                        <div class="user-info">
+                            <h2 id="name">Name</h2>
+                            <p id="blog">Blog</p>
+                            <p id="location">Location</p>
+                            <p id="favoriteLang">Favorite Language</p>
+                        </div>
+                    </div>
+                    <div id="bio">
+                        <p id="bio-text">Bio</p>
+                    </div>
+                </div>
+                <div class="error-info">
+                    <p id="error-msg"></p>
+                </div>
+                <div class="fetch-info">
+                    <p id="fetch-msg"></p>
+                </div>
+            </div>
+            <div class="box form_box">
+                <form id="form">
+                    <input type="text" id="usernameInput" placeholder="Username" required>
+                    <button class="submit-button" type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
