@@ -1,0 +1,186 @@
+/* 
+    set background image, resize the background image to cover the entire container
+    specified fonts
+*/
+body {
+    background-image: url("../images/background.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 
+    container holds all objects
+    specified flex display and align items to the center
+    flex items can wrap onto multiple lines
+*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 90vh;
+}
+
+/* 
+    box contains submit form and result box
+    set background and spacing
+*/
+.box {
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #aaa;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.9;
+    
+}
+
+/* 
+    result box width
+*/
+.result_box {
+    width: 40%;
+}
+
+
+/* 
+    info section contains info box div and bio div
+    flex display is used
+    specified padding and margin
+    flex items are ordered in column
+*/
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+    margin: 15px 0;
+}
+
+/* 
+    flex items are ordered in row
+    align items to the center
+*/
+.info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* 
+    set height and width for profile image
+    rounded image by using border radius
+*/
+#profile_image {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin-right: 30px;
+}
+
+/* 
+    h2 font size
+*/
+h2 {
+    font-size: 28px;
+
+}
+
+/* 
+    paragraph font size
+*/
+p {
+    font-size: 18px;
+}
+
+/* 
+    set margin on the top of bio div
+*/
+#bio {
+    margin-top: 10px;
+}
+
+/* 
+    the default display for this div is none
+    when error occured the display with change to flex
+    to cover all parents set z-index to 100
+*/
+.error-info{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: none; 
+    padding: 8px;
+}
+
+/* 
+    set error masssage color and font size
+*/
+#error-msg {
+    color: red;
+    font-size: 24px;
+}
+
+/* 
+    set height and margin for fetch-info div
+*/
+.fetch-info {
+    margin-left: 5px;
+    height: 35px;
+    display: flex;
+}
+
+/* 
+    set fetch massage font size
+*/
+#fetch-msg {
+    font-size: 14px;
+}
+
+/* 
+    set padding for submit form
+    Aligns flex items along the main axis of the current line of the flex container.
+*/
+.form_box {
+    padding: 40px;
+    justify-content: center;
+}
+
+/* 
+    style text input
+*/
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* 
+    style submit button
+*/
+.submit-button {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
